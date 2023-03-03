@@ -1,0 +1,16 @@
+﻿@model List<Client>
+<table cellpadding="0" cellspacing="0" border="1">
+    <tr>
+        <th>Pavadinimas</th>
+        <th>Adresas</th>
+        <th>Pašto kodas</th>
+    </tr>
+    @foreach (Client client in Model)
+    {
+        <tr>
+            <td>@client.Name</td>
+            <td>@client.Address</td>
+            <td>@client.PostCode</td>
+        </tr>
+    }
+</table>
